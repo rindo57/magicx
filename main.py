@@ -780,7 +780,7 @@ async def api_get_directory(request: Request,  session: str = Cookie(None)):
         folder_data = convert_class_to_dict(data, isObject=False, showtrash=False)
         print("folder data: ", folder_data)
 
-    elif "&auth" in data["share"]:
+    elif "/" in data["share"]:
         print("data[share]", data["share"])
         if query:
 
