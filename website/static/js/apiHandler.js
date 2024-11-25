@@ -87,7 +87,7 @@ async function getCurrentDirectory() {
         const json = await postJson('/api/getDirectory', data);
 
         if (json.status === 'ok') {
-            if (getCurrentPath().startsWith('/share')) {
+            if (getCurrentPathx().startsWith('/')) {
                 const sections = document.querySelector('.sidebar-menu').getElementsByTagName('a');
 
                 if (removeSlash(json['auth_home_path']) === removeSlash(path.split('_')[1])) {
