@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById(inputs[i]).addEventListener('input', validateInput);
     }
 
-    if (getCurrentPath().includes('/share_')) {
+    if (getCurrentPathx().includes('/')) {
         getCurrentDirectory()
   } 
     //else if (getCurrentPath().includes('/search')) {
